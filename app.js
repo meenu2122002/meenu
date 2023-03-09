@@ -11,6 +11,6 @@ const router=require("./routes/authstudent");
 const router2=require("./routes/authteacher");
 app.use("/api/student",router)
 app.use("/api/teacher",router2);
-app.listen(8080,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("application is successfully running");
 });
